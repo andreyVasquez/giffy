@@ -6,17 +6,18 @@
   margin: 10px auto;
   padding: 20px 0;
   width: 144px;
-  cursor: pointer;
 }
 
 .App-logo img {
   object-fit: cover;
   width: 100%;
+  cursor: pointer;
 }
 
 .App-title {
   color: var(--theme-body-txt);
   margin-top: 0.6rem;
+  text-transform: capitalize;
 }
 
 .App-content {

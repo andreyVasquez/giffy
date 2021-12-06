@@ -5,10 +5,10 @@ const fromApiResponseToGifs = apiResponse => {
     return data
 }
 
-export default async function getTrendingTerms() {
+export default async function getTrendingTerms({ signal }) {
     const apiURL = `${API_URL}/trending/searches?api_key=${API_KEY}`
 
-    return await fetch(apiURL)
+    return await fetch(apiURL, { signal })
         .then(res => res.json())
         .then(fromApiResponseToGifs)
 }
