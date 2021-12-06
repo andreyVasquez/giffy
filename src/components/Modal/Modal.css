@@ -7,14 +7,18 @@
     left: 0;
     right: 0;
     z-index: 10000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .modal-content {
     background: #111;
-    width: 300px;
+    width: 100%;
+    max-width: 370px;
     padding: 10px 20px;
-    height: 80vh;
-    margin: 10vh auto;
+    height: auto;
+    max-height: 450px;
     position: relative;
 }
 
