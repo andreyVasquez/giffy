@@ -19,7 +19,7 @@ export default function Register() {
 
     if (registered) {
         return <h4>
-            Congratulations ✅! You've been successfully registered!
+            Congratulations <span aria-label="" role="img">✅</span>! You've been successfully registered!
         </h4>
     }
 

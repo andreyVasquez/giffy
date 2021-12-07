@@ -26,6 +26,7 @@ export const Link = styled(LinkWouter)`
 
     :hover {
         background-color: var(--brand-color_2);
+        color: #000;
     }
 
     [disabled] {

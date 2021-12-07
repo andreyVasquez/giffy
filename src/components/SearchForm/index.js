@@ -10,13 +10,12 @@ export default function SearchForm({
     initialKeyword = '',
     initialRating = RATINGS[0]
 }) {
-    const [_, pushLocation] = useLocation()
+    const [, pushLocation] = useLocation()
 
     const { keyword, rating, changeKeyword, changeRating } = useForm({ initialKeyword, initialRating })
 
     const onSubmit = ({ keyword }) => {
         if (keyword !== '') {
-            // navegar a otra ruta
             pushLocation(`/search/${keyword}/${rating}`)
         }
     }

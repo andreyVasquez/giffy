@@ -1,12 +1,19 @@
 /** @jsx jsx */
 /** @jsxFrag React.Fragment */
-import React from 'react'
+import React from 'react' // eslint-disable-line
 import SearchForm from "components/SearchForm";
 import { Helmet } from "react-helmet";
 import Button from 'components/Button'
 import { css, jsx } from '@emotion/core'
 
-const gifsErrors = ['d2jjuAZzDSVLZ5kI', 'Bp3dFfoqpCKFyXuSzP', 'hv5AEBpH3ZyNoRnABG', 'hLwSzlKN8Fi6I'];
+const gifsErrors = [
+    'd2jjuAZzDSVLZ5kI', 
+    '8L0Pky6C83SzkzU55a', 
+    'Bp3dFfoqpCKFyXuSzP', 
+    'hv5AEBpH3ZyNoRnABG', 
+    'hLwSzlKN8Fi6I', 
+    'xTiN0L7EW5trfOvEk0'
+];
 
 const pageErrorStyles = css`
     display: flex;
